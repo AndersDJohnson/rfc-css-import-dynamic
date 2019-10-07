@@ -36,10 +36,6 @@ We could bring some users back from CSS-in-JS.
 Possible alternate syntax:
 
 ```css
-#about-page {
-  import: "path/to/about-page/css";
-}
-
 .modal.open {
   import: "path/to/modal/css";
 }
