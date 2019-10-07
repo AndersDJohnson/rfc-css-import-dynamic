@@ -29,6 +29,6 @@ with the media query suffix syntax):
 ```
 
 This could lighten the responsbility of modern module bundlers like `webpack`
-to need to understand & package CSS just to be able to import it dynamically,
+to need to understand & package CSS just to be able to import it dynamically
 along with the JS modules that use it.
 We could bring some users back from CSS-in-JS.
