@@ -1,6 +1,8 @@
 # rfc-css-import-dynamic
 A proposal for CSS dynamic `@import`.
 
+## Intro
+
 CSS `@import` could be scoped to a given selector so that it would only be downloaded once
 the selector matches.
 
@@ -13,6 +15,13 @@ the selector matches.
   @import "path/to/modal/css";
 }
 ```
+
+This could lighten the responsbility of modern module bundlers like `webpack`
+to need to understand & package CSS just to be able to import it dynamically
+along with the JS modules that use it.
+We could bring some users back from CSS-in-JS.
+
+## Prefetching
 
 A browser could decide whether/when to prefetch or preload before the selector matches.
 Or we could explicitly tell it to do so (but be careful not to interfere
@@ -28,12 +37,9 @@ with the media query suffix syntax):
 }
 ```
 
-This could lighten the responsbility of modern module bundlers like `webpack`
-to need to understand & package CSS just to be able to import it dynamically
-along with the JS modules that use it.
-We could bring some users back from CSS-in-JS.
+---
 
-Possible alternate syntax:
+## Possible alternate syntax
 
 ```css
 .modal.open {
